@@ -2,7 +2,7 @@
 Repository for homeworks from Java PVT.
 паапвапррр
 ## Project structure �
-
+опропр
 You must add new project by next path:
 ```
 <THEME_NUMBER>.<THEME_NAME>/<AUTHOR>/<YOU_PROJECT>
