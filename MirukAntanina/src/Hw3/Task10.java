@@ -5,17 +5,17 @@ package Hw3;
  */
 public class Task10 {
     public static void main(String[] args) {
-        int x = 7;
+        int number = 7;
         int simple = 0;
-        for (int i = 1; i <= x; i++) {
-            if (x % i == 0) {
+        for (int i = 1; i <= number; i++) {
+            if (number % i == 0) {
                 simple++;
             }
         }
         if (simple == 2) {
-            System.out.println("Число " + x + " является простым.");
+            System.out.println("Число " + number + " является простым.");
         } else {
-            System.out.println("Число " + x + " не является простым.");
+            System.out.println("Число " + number + " не является простым.");
         }
     }
 }
