@@ -1,8 +1,5 @@
 package Hw2;
 
-/**
- * Created by miruk on 2/11/15.
- */
 public class Task4 {
     public static void main(String[] arg) {
         int a = 2;
