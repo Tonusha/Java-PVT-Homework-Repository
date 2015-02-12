@@ -8,9 +8,9 @@ public class Task7 {
         int ttt = 6544;
         int one = ttt%10;
         int two = (ttt%100)/10;
-        int thre = (ttt%1000)/100;
+        int three = (ttt%1000)/100;
         int four = (ttt%10000)/1000;
-        if ((one!=two)&&(one!=thre)&&(one!=four)&&(two!=thre)&&(two!=four)&&(thre!=four))
+        if ((one!=two)&&(one!=three)&&(one!=four)&&(two!=three)&&(two!=four)&&(three!=four))
         {System.out.println("Все цифры числа " + ttt + " различны.");}
         else {System.out.println("Есть повторяющиеся цифры в числе " + ttt );}
     }
