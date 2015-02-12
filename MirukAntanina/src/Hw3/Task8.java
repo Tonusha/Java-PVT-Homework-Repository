@@ -6,18 +6,18 @@ package Hw3;
 public class Task8 {
     public static void main(String[] args) {
         double averageProd = 0;
-        double Prod = 1;
+        double prod = 1;
         int n = 0;
         int x = (int) (Math.random() * 20);
         System.out.println(x);
         while (x != 0) {
-            Prod *= x;
+            prod *= x;
             n++;
             x = (int) (Math.random() * 20);
             System.out.println(x);
         }
         if (n != 0) {
-            averageProd = Prod / n;
+            averageProd = prod / n;
         } else {
             averageProd = 0;
         }
