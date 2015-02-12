@@ -5,17 +5,17 @@ package Hw2;
  */
 public class Task5 {
     public static void main(String[] arg) {
-        int w = 201;
-        String  ww;
-        if ((w%10==1)&&(w!=11)) {    ww = " рубль ";
+        int rub = 201;
+        String  ruble;
+        if ((rub%10==1)&&(rub!=11)) {    ruble = " рубль ";
         }
         else if ((
-                (w%10==2)||(w%10==4)||(w%10==3))&&((w!=12)||(w!=13)||(w!=14))) {
-            ww = " рубля ";
+                (rub%10==2)||(rub%10==4)||(rub%10==3))&&((rub!=12)||(rub!=13)||(rub!=14))) {
+            ruble = " рубля ";
         }
-        else {ww = " рублей ";}
+        else {ruble = " рублей ";}
 
-        System.out.println(w + ww);
+        System.out.println(rub + ruble);
     }
 }
 
