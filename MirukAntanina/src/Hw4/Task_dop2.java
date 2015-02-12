@@ -1,8 +1,10 @@
 package Hw4;
+
 import java.util.Scanner;
+
 /**
- Даны вещественные числа a, b, c, d. Если a <= b <= c <= d, то каждое число заменить наибольшим, если
- a > b > c > d, то числа оставить без изменений, в противном случае – все числа заменить их квадратами.
+ * Даны вещественные числа a, b, c, d. Если a <= b <= c <= d, то каждое число заменить наибольшим, если
+ * a > b > c > d, то числа оставить без изменений, в противном случае – все числа заменить их квадратами.
  */
 public class Task_dop2 {
     public static void main(String[] args) {
@@ -20,11 +22,11 @@ public class Task_dop2 {
             c = max;
         } else if ((a > b) && (b > c) && (c > d)) {
         } else {
-            a*=a;
-            b*=b;
-            c*=c;
-            d*=d;
+            a *= a;
+            b *= b;
+            c *= c;
+            d *= d;
         }
-        System.out.println(a + ", " + b + ", " + c + ", " + d );
+        System.out.println(a + ", " + b + ", " + c + ", " + d);
     }
 }
