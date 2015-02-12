@@ -24,10 +24,8 @@ public class Task14 {
                 minIndex = i;
             }
         }
-//        System.out.println(minIndex );
-        //      System.out.println(maxIndex );
         int sum = 0;
-        if (minIndex < maxIndex) {
+        if (minIndex < maxIndex) {      //суммирует элементы между макс и мин или наоборот
             for (int i = minIndex; i <= maxIndex; i++) {
                 sum += array[i];
             }
@@ -35,7 +33,6 @@ public class Task14 {
             for (int i = maxIndex; i <= minIndex; i++) {
                 sum += array[i];
             }
-
         }
         System.out.println("Индекс минимального элемента: " + minIndex);
         System.out.println("Индекс максимального элемента: " + maxIndex);
