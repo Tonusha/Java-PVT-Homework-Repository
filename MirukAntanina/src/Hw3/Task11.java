@@ -10,14 +10,14 @@ public class Task11 {
             array[i] = (int) (Math.random() * 10 + 1);
         }
         int sum = 0;
-        int numbreak = 0;
+        int numBreak = 0;
         for (int i = 1; i < array.length; i++) {
             if (array[i] % 3 == 0) {
                 System.out.println(array[i]);
                 sum += array[i];
-                numbreak += 1;
+                numBreak += 1;
             }
-            if (numbreak == 2) {
+            if (numBreak == 2) {
                 break;
             }
         }
