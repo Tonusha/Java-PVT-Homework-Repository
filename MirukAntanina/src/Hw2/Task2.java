@@ -6,23 +6,24 @@ package Hw2;
 public class Task2 {
     public static void main(String[] arg) {
         int s = 86400*188 + 3600 + 60 + 9;
-        int sec = s % 60; // остаток - секунд
-        int m = (s - sec) / 60; //вычисяем сколько минут
-        int min = m % 60; // осток - минут
-        int h = (m - min) / 60; //вычисяем сколько часов
-        int hour = h % 24; // остаток - часов
-        int d = (h - hour) / 24; //вычисляем сколько дней
-        int day = d % 7; // остаток - дней
+        int sec = s % 60;
+        int m = (s - sec) / 60;
+        int min = m % 60;
+        int h = (m - min) / 60;
+        int hour = h % 24;
+        int d = (h - hour) / 24;
+        int day = d % 7;
         int w = (d - day) / 7;
+
         String  ww, dd, hh,mm,ss;
-        ww  = " недел";
-        if ((w%10==1)&&(w!=11)) {    ww = ww + "я ";
+
+        if ((w%10==1)&&(w!=11)) {    ww = " неделя ";
         }
         else if ((
                 (w%10==2)||(w%10==3)||(w%10==4))&&((w!=12)||(w!=13)||(w!=14))) {
-            ww = ww + "и ";
+            ww = " недели ";
         }
-        else {ww = ww + "ь ";}
+        else {ww = " недель ";}
 
         if (d==1) {    dd = " день ";
         }
