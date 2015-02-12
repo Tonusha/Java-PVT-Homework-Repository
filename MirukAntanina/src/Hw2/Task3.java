@@ -9,7 +9,7 @@ public class Task3 {
         if (num % 10 == 7) {
             System.out.println("Последняя цифра числа " + num + " - 7.");
         } else {
-            System.out.println("Последняя цифра числа " + num + " не 7.");
+            System.out.println("Последняя цифра числа " + num + " не являетя 7.");
         }
     }
 }
