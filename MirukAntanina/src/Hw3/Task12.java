@@ -12,11 +12,11 @@ public class Task12 {
             array[i] = (int) (Math.random() * 10 + 1);
             System.out.print(array[i] + ", ");
         }
-        int maxelem = array[0];
+        int maxElem = array[0];
         System.out.println("  ");
         for (int i = 1; i < array.length; i++) {
-            if (maxelem < array[i]) {
-                maxelem = array[i];
+            if (maxElem < array[i]) {
+                maxElem = array[i];
                 maxIndex = i;
             }
         }
