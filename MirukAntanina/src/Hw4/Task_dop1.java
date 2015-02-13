@@ -10,11 +10,16 @@ public class Task_dop1 {
         System.out.print("Введите дробное число: ");
         Scanner sc = new Scanner(System.in);
         float number = sc.nextFloat();
-        number *= 1000;
-        float first = number % 10;
-        float two = (number % 100 - first) / 10;
-        float three = (number % 1000 - number % 100) / 100;
-        int sum = (int) first + (int) two + (int) three;
+        System.out.print("Введите сколько чисел после запятой сложить: ");
+        float n = sc.nextFloat();
+        int sum = 0, pow = 10;
+        System.out.println(number % 10);
+        for (int i=0; i<=n; i++) {
+            number*=pow;
+            float u = (number % 100-number % 10)/10;
+            System.out.println(u);
+           sum += u;
+        }
         System.out.println("Сумма первых трех цифр дробной части заданного положительного вещественного числа " + sum);
     }
 }
