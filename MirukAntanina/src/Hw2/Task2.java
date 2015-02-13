@@ -1,13 +1,12 @@
 package Hw2;
 import java.util.Scanner;
-/**
- * Created by miruk on 2/11/15.
- */
+
 public class Task2 {
     public static void main(String[] arg) {
         System.out.print("Введите число: ");
         Scanner sc = new Scanner(System.in);
         int s = sc.nextInt();
+        sc.close();
         int sec = s % 60;
         int m = (s - sec) / 60;
         int min = m % 60;
