@@ -1,11 +1,11 @@
 package Hw2;
 
-/**
- * Created by miruk on 2/11/15.
- */
+import java.util.Scanner;
 public class Task5 {
     public static void main(String[] arg) {
-        int rub = 201;
+        System.out.print("Введите количество рублей: ");
+        Scanner sc = new Scanner(System.in);
+        int rub = sc.nextInt();
         String  ruble;
         if ((rub%10==1)&&(rub!=11)) {    ruble = " рубль ";
         }
