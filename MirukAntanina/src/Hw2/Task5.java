@@ -6,6 +6,7 @@ public class Task5 {
         System.out.print("Введите количество рублей: ");
         Scanner sc = new Scanner(System.in);
         int rub = sc.nextInt();
+        sc.close();
         String  ruble;
         if ((rub%10==1)&&(rub!=11)) {    ruble = " рубль ";
         }
