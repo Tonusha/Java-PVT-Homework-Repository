@@ -15,6 +15,7 @@ public class Task_dop2 {
         b = sc.nextFloat();
         c = sc.nextFloat();
         d = sc.nextFloat();
+        sc.close();
         if ((b >= a) && (c >= b) && (d >= c)) {
             float max = d;
             a = max;
