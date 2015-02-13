@@ -7,10 +7,10 @@ public class Task_dop3 {
     public static void main(String[] args) {
         final int number = 100;
         int step = 0;
-        int rezult = 0;
+        int result = 0;
 
-        while (rezult < Integer.MAX_VALUE) {
-            rezult = (int) Math.pow(number, step);
+        while (result < Integer.MAX_VALUE) {
+            result = (int) Math.pow(number, step);
             step++;
         }
 
