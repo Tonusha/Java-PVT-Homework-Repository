@@ -1,7 +1,6 @@
 package Hw3;
 
 import java.util.Scanner;
-
 public class Task11 {
     public static void main(String[] args) {
         int number, sum = 0;
