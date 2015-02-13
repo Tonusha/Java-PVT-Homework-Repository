@@ -25,7 +25,7 @@ public class Task14 {
             }
         }
         int sum = 0;
-        if (minIndex < maxIndex) {      //суммирует элементы между макс и мин или наоборот
+        if (minIndex < maxIndex) {
             for (int i = minIndex; i <= maxIndex; i++) {
                 sum += array[i];
             }
