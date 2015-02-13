@@ -1,27 +1,20 @@
 package Hw3;
 
-/**
- * Created by miruk on 2/11/15.
- */
+import java.util.Scanner;
+
 public class Task11 {
     public static void main(String[] args) {
-        int array[] = new int[20];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 10 + 1);
-        }
-        int sum = 0;
-        int numBreak = 0;
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] % 3 == 0) {
-                System.out.println(array[i]);
-                sum += array[i];
-                numBreak += 1;
-            }
-            if (numBreak == 2) {
-                break;
+        int number, sum = 0;
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите натуральное число: ");
+        number = in.nextInt();
+        for (int i = 1; i <= number; i++) {
+            if (i % 3 == 0) {
+                sum += i;
             }
         }
-        System.out.println("Сумма первых n чисел, которые делятся на 3 равна: " + sum);
-
+        System.out.println("Сумма первых " + number + " чисел, которые делятся на 3, равна - " + sum);
+        in.close();
     }
 }
+
