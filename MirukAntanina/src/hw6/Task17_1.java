@@ -24,6 +24,6 @@ public class Task17_1 {
             }
 
         }
-        System.out.println("В этой строке "+ word_cntr+" слов");
+        System.out.println("В этой строке "+ n+" слов");
     }
 }
