@@ -11,13 +11,6 @@ public class Task15 {
                 array[i][j] = array[size - i][j] = 1;
             }
         }
-        for (int i = 0; i <= size; i++) {
-            for (int j = 0; j <= size; j++) {
-                if (array[i][j] < 10) str = "  ";
-                else str = " ";
-                System.out.print(array[i][j] + str);
-            }
-            System.out.println();
-        }
+        Array_Operation.ArrayPrint(array);
     }
 }
