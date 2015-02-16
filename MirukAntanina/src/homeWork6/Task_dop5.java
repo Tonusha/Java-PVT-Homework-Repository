@@ -11,8 +11,9 @@ public class Task_dop5 {
         Scanner sc = new Scanner(System.in);
         float x = sc.nextFloat();
         sc.close();
-        double a = pow((cos(pow(E, x)) + pow(E, pow(x, 2)) + sqrt(1 / x)), 1 / 4);
-        double b = pow(cos(PI * pow(x, 3)) + log10(pow(1 + x, 2)), sin(x));
+        double a = pow((cos(pow(E, x)) + pow(E, pow(x, 2)) + sqrt(1 / x)), 0.25);
+        double b = pow((cos(PI * pow(x, 3)) + log(pow((1 + x), 2))), sin(x));
+
         double y = a / b;
         System.out.println("y = " + y);
     }
