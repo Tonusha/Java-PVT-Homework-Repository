@@ -12,18 +12,16 @@ public class Task17_1 {
         int n = 0;
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == ' ') {
-                for (;i<str.length();i++){
-                    if (str.charAt(i)!=' '){
+                for (; i < str.length(); i++) {
+                    if (str.charAt(i) != ' ') {
                         n++;
                         break;
                     }
                 }
-            }
-            else if (i==0){//обрабатываем начало строки
+            } else if (i == 0) {
                 n++;
             }
-
         }
-        System.out.println("В этой строке "+ n+" слов");
+        System.out.println("В этой строке " + n + " слов");
     }
 }
