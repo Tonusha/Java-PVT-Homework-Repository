@@ -1,4 +1,4 @@
-package Hw3;
+package homeWork3;
 
 import java.util.Scanner;
 public class Task11 {

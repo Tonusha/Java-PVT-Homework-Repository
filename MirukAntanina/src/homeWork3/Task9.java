@@ -1,4 +1,4 @@
-package Hw3;
+package homeWork3;
 
 /**
  * Created by miruk on 2/11/15.

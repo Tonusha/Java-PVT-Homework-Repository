@@ -1,4 +1,4 @@
-package Hw3;
+package homeWork3;
 
 public class Task6 {
     public static void main(String[] args) {
