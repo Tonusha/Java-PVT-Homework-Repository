@@ -1,4 +1,4 @@
-package Hw2;
+package hw2;
 
 import java.util.Scanner;
 public class Task7 {
