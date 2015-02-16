@@ -1,4 +1,4 @@
-package hw6;
+package homeWork6;
 
 //вывести текст, составленный из последних букв слов
 public class Task18 {

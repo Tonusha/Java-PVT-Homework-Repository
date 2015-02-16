@@ -1,4 +1,4 @@
-package hw6;
+package homeWork6;
 
 /**
  * Created by Tonya on 15.02.2015.

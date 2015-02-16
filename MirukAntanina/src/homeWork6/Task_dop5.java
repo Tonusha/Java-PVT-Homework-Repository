@@ -1,4 +1,4 @@
-package hw6;
+package homeWork6;
 //пример
 
 import java.util.Scanner;
