@@ -1,4 +1,4 @@
-package Hw2;
+package hw2;
 
 /**
  * Created by miruk on 2/11/15.
