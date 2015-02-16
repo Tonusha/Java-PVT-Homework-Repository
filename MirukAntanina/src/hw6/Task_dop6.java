@@ -6,27 +6,18 @@ package hw6;
 public class Task_dop6 {
     public static void main(String[] args) {
         System.out.println("Исследуемая строка:");
-        String str = "с лексикографически первой последовательности (((())))";
+        String str = "  Суть ()       (    проекта (Центр славянских языков) и культур  )        ";
         System.out.println(str);
         System.out.println();
-        int dot = 0, comma = 0, exclamation = 0, question = 0, colon = 0, dash = 0;
+        int open = 0, close = 0;
         for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-            if (ch == '.') {
-                dot++;
-            } else if (ch == ',') {
-                comma++;
-            } else if (ch == '-') {
-                dash++;
-            } else if (ch == '!') {
-                exclamation++;
-            } else if (ch == '?') {
-                question++;
-            } else if (ch == ':') {
-                colon++;
+            if (str.charAt(i) == '(') {
+                open++;
+            }
+            if (str.charAt(i) == ')') {
+                close++;
             }
         }
-        System.out.println("В это строке: '.' - " + dot + ", ',' - "
-                + comma + ", '!' - " + exclamation + ", '?' - " + question + ", ':' - " + colon + ", ' - ' - " + dash);
+        System.out.println("В этой строке открывающихся скобок " + open + " и закрывающихся - " + close);
     }
 }
