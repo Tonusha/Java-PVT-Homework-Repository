@@ -1,4 +1,6 @@
-package Hw5;
+package homeWork5;
+
+import homeWork5.Kub;
 
 /**
  * Created by miruk on 2/13/15.
