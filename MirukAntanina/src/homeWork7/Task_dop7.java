@@ -11,17 +11,29 @@ public class Task_dop7 {
                 "Пример: за одну наносекунду свет в вакууме 9 проходит приблизительно тридцать сантиметров.";
         System.out.println(str);
         System.out.println();
-        System.out.println("Количество гласных букв = " + Arrays.toString(str.split("[аяоеуюыиёэ]")).length());
-        System.out.println("Количество согласных букв = "+Arrays.toString(str.split("[бвгджзклмнпрстфхчцьъшщ]")).length());
-        Pattern ptrn = Pattern.compile("[^.]+");
+        Pattern ptrn = Pattern.compile("[аяоеуюыиёэ]");
         Matcher matcher = ptrn.matcher(str);
+        int ctr = 0;
+        while (matcher.find()){
+            ctr++;
+        }
+        System.out.println("Количество гласных букв = "+ctr);
+        ptrn = Pattern.compile("[бвгджзклмнпрстфхчцьъшщ]");
+        matcher = ptrn.matcher(str);
+        ctr = 0;
+        while (matcher.find()){
+            ctr++;
+        }
+        System.out.println("Количество согласных букв = "+ctr);
+        ptrn = Pattern.compile("[^.]+");
+        matcher = ptrn.matcher(str);
         while(matcher.find()){
             System.out.print('"'+matcher.group()+'"');
             System.out.println(" " + matcher.group().length() + " знаков");
         }
         ptrn = Pattern.compile("\\s");
         matcher = ptrn.matcher(str);
-        int ctr = 0;
+        ctr = 0;
         while (matcher.find()){
             ctr++;
         }
