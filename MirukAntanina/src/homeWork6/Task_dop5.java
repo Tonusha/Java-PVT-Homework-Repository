@@ -1,6 +1,7 @@
 package homeWork6;
 //пример
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 import static java.lang.Math.*;
@@ -11,10 +12,13 @@ public class Task_dop5 {
         Scanner sc = new Scanner(System.in);
         float x = sc.nextFloat();
         sc.close();
-        double a = pow((cos(pow(E, x)) + pow(E, pow(x, 2)) + sqrt(1 / x)), 0.25);
+        double a = (cos(pow(E, x)) + pow(E, pow(x, 2)) + sqrt(1 / x));
         double b = pow((cos(PI * pow(x, 3)) + log(pow((1 + x), 2))), sin(x));
-
-        double y = a / b;
-        System.out.println("y = " + y);
+        if ((b == 0)||(a <0)||(1/x<0)||(x==0)||(pow((1+x),2)>0)) {
+            System.out.println("Число х выходит из области допустимых значений");
+        } else {
+            double y = (pow(a,0.25)) / b;
+            System.out.println("y = " + y);
+        }
     }
 }
