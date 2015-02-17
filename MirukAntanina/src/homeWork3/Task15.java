@@ -11,6 +11,6 @@ public class Task15 {
                 array[i][j] = array[size - i][j] = 1;
             }
         }
-        Array_Operation.ArrayPrint(array);
+        ArrayOperation.arrayPrint(array);
     }
 }
